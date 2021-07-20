@@ -1,0 +1,70 @@
+body{
+    background-color:#00001a;
+}
+
+footer{
+    color:white;
+    font-family: Arial;
+    text-align: center;
+    font-style: italic;
+}
+
+h1{
+    color:white;
+    font-family: Arial;
+}
+
+h3{
+    color:white;
+    font-family: Arial;
+}
+
+main{
+    text-align: left;
+}
+
+nav{
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.menu{
+    text-decoration: none;
+    color:white;
+}
+
+table{
+    color:white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.tab_branco{
+    background-color: white;
+    color: #00001a;
+}
+
+.tab_cinza{
+    background-color: grey;
+}
+
+td{
+    border-bottom: 6px solid #00001a;
+}
+
+th{
+    border-bottom: 6px solid #00001a;
+}
+
+input{
+    border: 3px solid lightgreen;
+}
+
+input:focus{
+    background-color: yellow;
+}
+
+p{
+    color:white;
+    font-family: Arial;
+}
