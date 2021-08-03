@@ -1,0 +1,156 @@
+body{
+    background-color:black;
+}
+
+.wrapper1 {
+    display:grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.div{
+
+}
+
+.social{
+    text-align: right;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.lista{
+    display: inline;
+    border-bottom: 2px solid darkred;
+}
+
+.lista:hover{
+    display: inline;
+    border-bottom: 2px solid red;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: Gold;
+}
+
+.noticia-principal{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("img/noticia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height:600px;
+}
+
+#h1-principal{
+    padding-top: 10px;
+    background-color: black;
+    color:gold;
+}
+
+.ultimo-jogo{
+    text-align: center;
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-right: auto;
+    margin-left: auto;
+    color: darkred;
+}
+
+.arena{
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-image: url("img/arena.PNG");
+    height:280px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.patrocinadores{
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: darkred;
+}
+
+.fundo-proximos{
+    background-color: darkred;
+    grid-row-start: 7;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding:20px;
+}
+
+.proximo{
+    grid-row-start: 7;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: gold;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.proximos{
+    grid-row-start: 7;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    color: gold;
+    font-size: 20px;
+}
+
+.titulo{
+    grid-row-start: 8;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color: darkred;
+}
+
+.wrapper2 {
+    display:grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fundo-noticias{
+    grid-row-start: 9;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.noticia{
+    background-color: gold;
+    color:black;
+    padding-top:4px;
+    text-align: center;
+}
+
+.footer{
+    grid-row-start: 10;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color:darkred;
+    text-align: right;
+}
+
