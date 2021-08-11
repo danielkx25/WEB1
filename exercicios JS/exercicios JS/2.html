@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body align="center">
+		<h1>Treinador de Futebol</h1>
+		Jogador:<input type="text" id="texto"/>
+		<br />
+		<br />
+		<button id="goleiro">Goleiro</button>
+		<button id="fixo">Fixo</button>
+		<button id="alaesquerda">Ala Esquerda</button>
+		<button id="aladireita">Ala Direta</button>
+		<button id="pivo">Pivô</button>
+		
+		<table border="1" style="width:800px; background-color:lightgreen; height:400px; text-align:center" align="center">
+			<thead>
+				<th colspan="4">Seleção</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="4" id="tdGoleiro">Goleiro</td>
+				</tr>
+				<tr>
+					<td id="tdAlaEsquerda">Ala Esquerda</td>
+					<td id="tdFixo">Fixo</td>
+				</tr>
+				<tr>
+					<td id="tdPivo">Pivô</td>
+					<td id="tdAlaDireita">Ala Direita</td>
+				</tr>
+			</tbody>
+		</table>
+		Regras: Pegar o nome informado pelo usuário no input Jogador e posiciná-lo na posição indicada pelo botão.
+
+	</body>
+	<script>
+		document.querySelector("#goleiro").onclick = function() {
+			document.querySelector("#tdGoleiro").innerHTML = "Goleiro: "+document.querySelector("#texto").value;
+		}
+		document.querySelector("#fixo").onclick = function() {
+			document.querySelector("#tdFixo").innerHTML = "Fixo: "+document.querySelector("#texto").value;
+		}
+		document.querySelector("#alaesquerda").onclick = function() {
+			document.querySelector("#tdAlaEsquerda").innerHTML = "Ala Esquerda: "+document.querySelector("#texto").value;
+		}
+		document.querySelector("#aladireita").onclick = function() {
+			document.querySelector("#tdAlaDireita").innerHTML = "Ala Direita: "+document.querySelector("#texto").value;
+		}
+		document.querySelector("#pivo").onclick = function() {
+			document.querySelector("#tdPivo").innerHTML = "Pivo: "+document.querySelector("#texto").value;
+		}
+	</script>
+</html>
