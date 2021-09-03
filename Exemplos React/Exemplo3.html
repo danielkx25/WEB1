@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+    <head>
+        <style>
+            .classe{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+            <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+            <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+            <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+            <script type="text/babel">
+                function Exemplo(props){
+                    return <h1 className="classe">{props.name}</h1>;
+                }
+
+                function Executar(){
+                    return(
+                        <div>
+                            <Exemplo name="Jorge"/>
+                            <Exemplo name="Marcos"/>
+                            <Exemplo name="Jezomel"/>
+                        </div>
+                    );
+                }
+
+                ReactDOM.render(
+                    <Executar />,
+                    document.getElementById('root')
+                );
+            </script>
+    </body>
+</html>
